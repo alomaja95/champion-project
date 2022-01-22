@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Company Management Admin </title>
+    <!-- Favicon-->
+    <link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+    <!-- Plugins Core Css -->
+    <link href="../../assets/css/app.min.css" rel="stylesheet">
+    <!-- Custom Css -->
+    <link href="../../assets/css/style.css" rel="stylesheet" />
+    <!-- You can choose a theme from css/styles instead of get all themes -->
+    <link href="../../assets/css/styles/all-themes.css" rel="stylesheet" />
+</head>
+
+<body class="light">
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="m-t-30">
+                <img class="loading-img-spin" src="../../assets/images/loading.png" alt="admin">
+            </div>
+            <p>Please wait...</p>
+        </div>
+    </div>
+    <!-- #END# Page Loader -->
+    <!-- Overlay For Sidebars -->
+    <div class="overlay"></div>
+    <!-- #END# Overlay For Sidebars -->
+    <!-- Top Bar -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="#" onClick="return false;" class="navbar-toggle collapsed" data-bs-toggle="collapse"
+                    data-target="#navbar-collapse" aria-expanded="false"></a>
+                <a href="#" onClick="return false;" class="bars"></a>
+                <a class="navbar-brand" href="../../index.html">
+                    <img src="../../assets/images/logo.png" alt="" />
+                    <span class="logo-name">PEGGROV GCC</span>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="pull-left">
+                    <li>
+                        <a href="#" onClick="return false;" class="sidemenu-collapse">
+                            <i data-feather="menu"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- Full Screen Button -->
+                    <li class="fullscreen">
+                        <a href="javascript:;" class="fullscreen-btn">
+                            <i class="fas fa-expand"></i>
+                        </a>
+                    </li>
+                    <!-- #END# Full Screen Button -->
+                    <!-- #START# Notifications-->
+                    <li class="dropdown">
+                        <a href="#" onClick="return false;" class="dropdown-toggle" data-bs-toggle="dropdown"
+                            role="button">
+                            <i class="far fa-bell"></i>
+                            <span class="notify"></span>
+                            <span class="heartbeat"></span>
+                        </a>
+                        <ul class="dropdown-menu pullDown">
+                            <li class="header">NOTIFICATIONS</li>
+                            <li class="body">
+                                <ul class="menu">
+                                    <li>
+                                        <a href="#" onClick="return false;">
+                                            <span class="table-img msg-user">
+                                                <img src="../../assets/images/user/user1.jpg" alt="">
+                                            </span>
+                                            <span class="menu-info">
+                                                <span class="menu-title">Sarah Smith</span>
+                                                <span class="menu-desc">
+                                                    <i class="material-icons">access_time</i> 14 mins ago
+                                                </span>
+                                                <span class="menu-desc">Please check your email.</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onClick="return false;">
+                                            <span class="table-img msg-user">
+                                                <img src="../../assets/images/user/user2.jpg" alt="">
+                                            </span>
+                                            <span class="menu-info">
+                                                <span class="menu-title">Airi Satou</span>
+                                                <span class="menu-desc">
+                                                    <i class="material-icons">access_time</i> 22 mins ago
+                                                </span>
+                                                <span class="menu-desc">Please check your email.</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onClick="return false;">
+                                            <span class="table-img msg-user">
+                                                <img src=".../../assets/images/user/user3.jpg" alt="">
+                                            </span>
+                                            <span class="menu-info">
+                                                <span class="menu-title">John Doe</span>
+                                                <span class="menu-desc">
+                                                    <i class="material-icons">access_time</i> 3 hours ago
+                                                </span>
+                                                <span class="menu-desc">Please check your email.</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onClick="return false;">
+                                            <span class="table-img msg-user">
+                                                <img src="../../assets/images/user/user4.jpg" alt="">
+                                            </span>
+                                            <span class="menu-info">
+                                                <span class="menu-title">Ashton Cox</span>
+                                                <span class="menu-desc">
+                                                    <i class="material-icons">access_time</i> 2 hours ago
+                                                </span>
+                                                <span class="menu-desc">Please check your email.</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onClick="return false;">
+                                            <span class="table-img msg-user">
+                                                <img src="../../assets/images/user/user5.jpg" alt="">
+                                            </span>
+                                            <span class="menu-info">
+                                                <span class="menu-title">Cara Stevens</span>
+                                                <span class="menu-desc">
+                                                    <i class="material-icons">access_time</i> 4 hours ago
+                                                </span>
+                                                <span class="menu-desc">Please check your email.</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onClick="return false;">
+                                            <span class="table-img msg-user">
+                                                <img src="../../assets/images/user/user6.jpg" alt="">
+                                            </span>
+                                            <span class="menu-info">
+                                                <span class="menu-title">Charde Marshall</span>
+                                                <span class="menu-desc">
+                                                    <i class="material-icons">access_time</i> 3 hours ago
+                                                </span>
+                                                <span class="menu-desc">Please check your email.</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onClick="return false;">
+                                            <span class="table-img msg-user">
+                                                <img src="assets/images/user/user7.jpg" alt="">
+                                            </span>
+                                            <span class="menu-info">
+                                                <span class="menu-title">John Doe</span>
+                                                <span class="menu-desc">
+                                                    <i class="material-icons">access_time</i> Yesterday
+                                                </span>
+                                                <span class="menu-desc">Please check your email.</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="footer">
+                                <a href="#" onClick="return false;">View All Notifications</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- #END# Notifications-->
+                    <li class="dropdown user_profile">
+                        <div class="dropdown-toggle" data-bs-toggle="dropdown">
+                            <img src="../../assets/images/user.jpg" alt="user">
+                        </div>
+                        <ul class="dropdown-menu pullDown">
+                            <li class="body">
+                                <ul class="user_dw_menu">
+                                    <li>
+                                        <a href="#" onClick="return false;">
+                                            <i class="material-icons">person</i>Profile
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onClick="return false;">
+                                            <i class="material-icons">feedback</i>Feedback
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onClick="return false;">
+                                            <i class="material-icons">help</i>Help
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onClick="return false;">
+                                            <i class="material-icons">power_settings_new</i>Logout
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- #END# Tasks -->
+                    <li class="pull-right">
+                        <a href="#" onClick="return false;" class="js-right-sidebar" data-close="true">
+                            <i class="fas fa-cog"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- #Top Bar -->
+    <div>
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+            <!-- Menu -->
+            <div class="menu">
+                <ul class="list">
+                    <li class="sidebar-user-panel active">
+                        <div class="user-panel">
+                            <div class=" image">
+                                <img src="../../assets/images/usrbig.jpg" class="user-img-style" alt="User Image" />
+                            </div>
+                        </div>
+                        <div class="profile-usertitle">
+                            <div class="sidebar-userpic-name"> Classic </div>
+                            <div class="profile-usertitle-job ">Manager </div>
+                        </div>
+                    </li>
+                    <li class="header">-- Main</li>
+                    <li>
+                        <a href="#" onClick="return false;" class="menu-toggle">
+                            <i data-feather="users"></i>
+                            <span>Merchant</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="all-clients.html">All Merchant</a>
+                            </li>
+                            <li>
+                                <a href="add-client.html">Add Merchant</a>
+                            </li>
+                            <li>
+                                <a href="edit-client.html">Edit Merchant</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <a href="#" onClick="return false;" class="menu-toggle">
+                            <i data-feather="user"></i>
+                            <span>Receipt</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="all-clients.html">All Receipt</a>
+                            </li>
+                            <li>
+                                <a href="add-client.html">Add Receipt</a>
+                            </li>
+                            <li>
+                                <a href="edit-client.html">Edit Receipt</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="#" onClick="return false;" class="menu-toggle">
+                            <i data-feather="book"></i>
+                            <span>Accounts</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="../accounts/income.html">Income</a>
+                            </li>
+                            <li>
+                                <a href="../accounts/expense.html">Expenses</a>
+                            </li>
+                            <li>
+                                <a href="../accounts/invoice.html">Invoices</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" onClick="return false;" class="menu-toggle">
+                            <i data-feather="dollar-sign"></i>
+                            <span>Payroll</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="../payroll/payslip.html">Payslip</a>
+                            </li>
+                            <li>
+                                <a href="../payroll/employee-salary.html">Employee Salary</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- #Menu -->
+        </aside>
+        <!-- #END# Left Sidebar -->
+        <!-- Right Sidebar -->
+        <aside id="rightsidebar" class="right-sidebar">
+            <ul class="nav nav-tabs tab-nav-right" role="tablist">
+                <li role="presentation">
+                    <a href="#skins" data-bs-toggle="tab" class="active">SKINS</a>
+                </li>
+                <li role="presentation">
+                    <a href="#settings" data-bs-toggle="tab">SETTINGS</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane in active in active stretchLeft" id="skins">
+                    <div class="demo-skin">
+                        <div class="rightSetting">
+                            <p>SIDEBAR COLOR</p>
+                            <div class="selectgroup selectgroup-pills sidebar-color mt-3">
+                                <label class="selectgroup-item">
+                                    <input type="radio" name="icon-input" value="1"
+                                        class="btn-check selectgroup-input select-sidebar" checked>
+                                    <span class="selectgroup-button selectgroup-button-icon" data-toggle="tooltip"
+                                        data-original-title="Light Sidebar"><i class="fas fa-sun"></i></span>
+                                </label>
+                                <label class="selectgroup-item">
+                                    <input type="radio" name="icon-input" value="2"
+                                        class="btn-check selectgroup-input select-sidebar">
+                                    <span class="selectgroup-button selectgroup-button-icon" data-toggle="tooltip"
+                                        data-original-title="Dark Sidebar"><i class="fas fa-moon"></i></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="rightSetting">
+                            <p>THEME COLORS</p>
+                            <div class="btn-group theme-color mt-3" role="group"
+                                aria-label="Basic radio toggle button group">
+                                <input type="radio" class="btn-check" name="btnradio" value="1" id="btnradio1"
+                                    autocomplete="off" checked>
+                                <label class="radio-toggle btn btn-outline-primary" for="btnradio1">Light</label>
+                                <input type="radio" class="btn-check" name="btnradio" value="2" id="btnradio2"
+                                    autocomplete="off">
+                                <label class="radio-toggle btn btn-outline-primary " for="btnradio2">Dark</label>
+                            </div>
+                        </div>
+                        <div class="rightSetting">
+                            <p>SKINS</p>
+                            <ul class="demo-choose-skin choose-theme list-unstyled">
+                                <li data-theme="black">
+                                    <div class="black-theme"></div>
+                                </li>
+                                <li data-theme="white">
+                                    <div class="white-theme white-theme-border"></div>
+                                </li>
+                                <li data-theme="purple">
+                                    <div class="purple-theme"></div>
+                                </li>
+                                <li data-theme="blue">
+                                    <div class="blue-theme"></div>
+                                </li>
+                                <li data-theme="cyan">
+                                    <div class="cyan-theme"></div>
+                                </li>
+                                <li data-theme="green">
+                                    <div class="green-theme"></div>
+                                </li>
+                                <li data-theme="orange">
+                                    <div class="orange-theme"></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="rightSetting">
+                            <p>RTL Layout</p>
+                            <div class="switch mt-3">
+                                <label>
+                                    <input type="checkbox" class="layout-change">
+                                    <span class="lever switch-col-red layout-switch"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="rightSetting">
+                            <p>DISK SPACE</p>
+                            <div class="sidebar-progress">
+                                <div class="progress m-t-20">
+                                    <div class="progress-bar l-bg-cyan shadow-style width-per-45" role="progressbar"
+                                        aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <span class="progress-description">
+                                    <small>26% remaining</small>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="rightSetting">
+                            <p>Server Load</p>
+                            <div class="sidebar-progress">
+                                <div class="progress m-t-20">
+                                    <div class="progress-bar l-bg-orange shadow-style width-per-63" role="progressbar"
+                                        aria-valuenow="63" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <span class="progress-description">
+                                    <small>Highly Loaded</small>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="mt-4 mb-4 p-3 align-center rt-sidebar-last-ele">
+                            <button type="button"
+                                class="btn btn-outline-primary btn-border-radius btn-restore-theme">Restore
+                                Default</button>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane stretchRight" id="settings">
+                    <div class="demo-settings">
+                        <p>GENERAL SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Report Panel Usage</span>
+                                <div class="switch">
+                                    <label>
+                                        <input type="checkbox" checked>
+                                        <span class="lever switch-col-green"></span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Email Redirect</span>
+                                <div class="switch">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="lever switch-col-blue"></span>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                        <p>SYSTEM SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Notifications</span>
+                                <div class="switch">
+                                    <label>
+                                        <input type="checkbox" checked>
+                                        <span class="lever switch-col-purple"></span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Auto Updates</span>
+                                <div class="switch">
+                                    <label>
+                                        <input type="checkbox" checked>
+                                        <span class="lever switch-col-cyan"></span>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                        <p>ACCOUNT SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Offline</span>
+                                <div class="switch">
+                                    <label>
+                                        <input type="checkbox" checked>
+                                        <span class="lever switch-col-red"></span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Location Permission</span>
+                                <div class="switch">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="lever switch-col-lime"></span>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- #END# Right Sidebar -->
+    </div>
+    <section class="content">
+        <div class="container-fluid">
+            <div class="block-header">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <ul class="breadcrumb breadcrumb-style ">
+                            <li class="breadcrumb-item">
+                                <h4 class="page-title">All Clients</h4>
+                            </li>
+                            <li class="breadcrumb-item bcrumb-1">
+                                <a href="../../index.html">
+                                    <i class="fas fa-home"></i> Home</a>
+                            </li>
+                            <li class="breadcrumb-item bcrumb-2">
+                                <a href="#" onClick="return false;">Merchants</a>
+                            </li>
+                            <li class="breadcrumb-item active">All Merchants</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>
+                                <strong>All</strong> Merchants
+                            </h2>
+                            <ul class="header-dropdown m-r--5">
+                                <li class="dropdown">
+                                    <a href="#" onClick="return false;" class="dropdown-toggle"
+                                        data-bs-toggle="dropdown" role="button" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        <i class="material-icons">more_vert</i>
+                                    </a>
+                                    <ul class="dropdown-menu pull-right">
+                                        <li>
+                                            <a href="#" onClick="return false;">Action</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" onClick="return false;">Another action</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" onClick="return false;">Something else here</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="body">
+                            <div class="row">
+                            <div class="col-md-2">
+                                <select class="list-group">
+                                    <option value="" disabled selected>Choose year</option>
+                                    <option value="1">2021</option>
+                                    <option value="2">2022</option>
+                                    <option value="3">2023</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <select class="list-group row-cols-md-4">
+                                    <option value="" disabled selected>Choose week</option>
+                                    <option value="1">Week 1</option>
+                                    <option value="2">Week 2</option>
+                                    <option value="3">Week 3</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <select class="list-group row-cols-md-4">
+                                    <option value="" disabled selected>Choose state</option>
+                                    <option value="1">Abia</option>
+                                    <option value="2">Anambra</option>
+                                    <option value="3">Kogi</option>
+                                </select>
+                            </div>
+                                <div class="col-md-2 button-demo">
+                                    <button type="button" class="btn btn-outline-info btn-border-radius">Search</button>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-hover js-basic-example contact_list">
+                                    <thead>
+                                        <tr>
+                                            <th class="center">#</th>
+                                            <th class="center"> Client ID </th>
+                                            <th class="center"> Name </th>
+                                            <th class="center"> Organization </th>
+                                            <th class="center"> Mobile </th>
+                                            <th class="center"> Email </th>
+                                            <th class="center"> Address </th>
+                                            <th class="center"> Action </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="odd gradeX">
+                                            <td class="table-img center">
+                                                <img src="../../assets/images/user/user1.jpg" alt="">
+                                            </td>
+                                            <td class="center">1001</td>
+                                            <td class="center">Rajesh</td>
+                                            <td class="center">Programmer</td>
+                                            <td class="center">+ 167-894-2378</td>
+                                            <td class="center"><a href="https://www.radixtouch.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d9bca1b8b4a9b5bc99bcb4b8b0b5f7bab6b4">[email&#160;protected]</a></td>
+                                            <td class="center">22,tilak appt. surat</td>
+                                            <td class="center">
+                                                <a href="edit-client.html" class="btn btn-tbl-edit">
+                                                    <i class="material-icons">create</i>
+                                                </a>
+                                                <a href="#" class="btn btn-tbl-delete">
+                                                    <i class="material-icons">delete_forever</i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="table-img center">
+                                                <img src="../../assets/images/user/user2.jpg" alt="">
+                                            </td>
+                                            <td class="center">1002</td>
+                                            <td class="center">Pooja Patel</td>
+                                            <td class="center">Manager</td>
+                                            <td class="center">+ 167-894-2378</td>
+                                            <td class="center"><a href="https://www.radixtouch.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="74110c1519041811341119151d185a171b19">[email&#160;protected]</a></td>
+                                            <td class="center">22,tilak appt. surat</td>
+                                            <td class="center">
+                                                <a href="edit-client.html" class="btn btn-tbl-edit">
+                                                    <i class="material-icons">create</i>
+                                                </a>
+                                                <a href="#" class="btn btn-tbl-delete">
+                                                    <i class="material-icons">delete_forever</i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="table-img center">
+                                                <img src="../../assets/images/user/user3.jpg" alt="">
+                                            </td>
+                                            <td class="center">1003</td>
+                                            <td class="center">Sarah Smith</td>
+                                            <td class="center">Manager</td>
+                                            <td class="center">+ 167-894-2378</td>
+                                            <td class="center"><a href="https://www.radixtouch.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="dabfa2bbb7aab6bf9abfb7bbb3b6f4b9b5b7">[email&#160;protected]</a></td>
+                                            <td class="center">22,tilak appt. surat</td>
+                                            <td class="center">
+                                                <a href="edit-client.html" class="btn btn-tbl-edit">
+                                                    <i class="material-icons">create</i>
+                                                </a>
+                                                <a href="#" class="btn btn-tbl-delete">
+                                                    <i class="material-icons">delete_forever</i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="table-img center">
+                                                <img src="../../assets/images/user/user4.jpg" alt="">
+                                            </td>
+                                            <td class="center">1004</td>
+                                            <td class="center">John Deo</td>
+                                            <td class="center">Designer</td>
+                                            <td class="center">+ 167-894-2378</td>
+                                            <td class="center"><a href="https://www.radixtouch.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="74110c1519041811341119151d185a171b19">[email&#160;protected]</a></td>
+                                            <td class="center">22,tilak appt. surat</td>
+                                            <td class="center">
+                                                <a href="edit-client.html" class="btn btn-tbl-edit">
+                                                    <i class="material-icons">create</i>
+                                                </a>
+                                                <a href="#" class="btn btn-tbl-delete">
+                                                    <i class="material-icons">delete_forever</i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="table-img center">
+                                                <img src="../../assets/images/user/user5.jpg" alt="">
+                                            </td>
+                                            <td class="center">1005</td>
+                                            <td class="center">Jay Soni</td>
+                                            <td class="center">Purchase Officer</td>
+                                            <td class="center">+ 167-894-2378</td>
+                                            <td class="center"><a href="https://www.radixtouch.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="395c41585449555c795c54585055175a5654">[email&#160;protected]</a></td>
+                                            <td class="center">22,tilak appt. surat</td>
+                                            <td class="center">
+                                                <a href="edit-client.html" class="btn btn-tbl-edit">
+                                                    <i class="material-icons">create</i>
+                                                </a>
+                                                <a href="#" class="btn btn-tbl-delete">
+                                                    <i class="material-icons">delete_forever</i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="table-img center">
+                                                <img src="../../assets/images/user/user6.jpg" alt="">
+                                            </td>
+                                            <td class="center">1006</td>
+                                            <td class="center">Jacob Ryan</td>
+                                            <td class="center">Receptionist</td>
+                                            <td class="center">+ 167-894-2378</td>
+                                            <td class="center"><a href="https://www.radixtouch.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b8ddc0d9d5c8d4ddf8ddd5d9d1d496dbd7d5">[email&#160;protected]</a></td>
+                                            <td class="center">22,tilak appt. surat</td>
+                                            <td class="center">
+                                                <a href="edit-client.html" class="btn btn-tbl-edit">
+                                                    <i class="material-icons">create</i>
+                                                </a>
+                                                <a href="#" class="btn btn-tbl-delete">
+                                                    <i class="material-icons">delete_forever</i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="table-img center">
+                                                <img src="../../assets/images/user/user7.jpg" alt="">
+                                            </td>
+                                            <td class="center">1007</td>
+                                            <td class="center">Megha Trivedi</td>
+                                            <td class="center">Manager</td>
+                                            <td class="center">+ 167-894-2378</td>
+                                            <td class="center"><a href="https://www.radixtouch.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bcd9c4ddd1ccd0d9fcd9d1ddd5d092dfd3d1">[email&#160;protected]</a></td>
+                                            <td class="center">22,tilak appt. surat</td>
+                                            <td class="center">
+                                                <a href="edit-client.html" class="btn btn-tbl-edit">
+                                                    <i class="material-icons">create</i>
+                                                </a>
+                                                <a href="#" class="btn btn-tbl-delete">
+                                                    <i class="material-icons">delete_forever</i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="table-img center">
+                                                <img src="../../assets/images/user/user8.jpg" alt="">
+                                            </td>
+                                            <td class="center">1008</td>
+                                            <td class="center">Rajesh</td>
+                                            <td class="center">Sr. Tester</td>
+                                            <td class="center">+ 167-894-2378</td>
+                                            <td class="center"><a href="https://www.radixtouch.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fe9b869f938e929bbe9b939f9792d09d9193">[email&#160;protected]</a></td>
+                                            <td class="center">22,tilak appt. surat</td>
+                                            <td class="center">
+                                                <a href="edit-client.html" class="btn btn-tbl-edit">
+                                                    <i class="material-icons">create</i>
+                                                </a>
+                                                <a href="#" class="btn btn-tbl-delete">
+                                                    <i class="material-icons">delete_forever</i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="table-img center">
+                                                <img src="../../assets/images/user/user9.jpg" alt="">
+                                            </td>
+                                            <td class="center">1009</td>
+                                            <td class="center">Pooja Patel</td>
+                                            <td class="center">Team Leader</td>
+                                            <td class="center">+ 167-894-2378</td>
+                                            <td class="center"><a href="https://www.radixtouch.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="701508111d001c1530151d11191c5e131f1d">[email&#160;protected]</a></td>
+                                            <td class="center">22,tilak appt. surat</td>
+                                            <td class="center">
+                                                <a href="edit-client.html" class="btn btn-tbl-edit">
+                                                    <i class="material-icons">create</i>
+                                                </a>
+                                                <a href="#" class="btn btn-tbl-delete">
+                                                    <i class="material-icons">delete_forever</i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="table-img center">
+                                                <img src="../../assets/images/user/user6.jpg" alt="">
+                                            </td>
+                                            <td class="center">1010</td>
+                                            <td class="center">Sarah Smith</td>
+                                            <td class="center">Manager</td>
+                                            <td class="center">+ 167-894-2378</td>
+                                            <td class="center"><a href="https://www.radixtouch.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ee8b968f839e828bae8b838f8782c08d8183">[email&#160;protected]</a></td>
+                                            <td class="center">22,tilak appt. surat</td>
+                                            <td class="center">
+                                                <a href="edit-client.html" class="btn btn-tbl-edit">
+                                                    <i class="material-icons">create</i>
+                                                </a>
+                                                <a href="#" class="btn btn-tbl-delete">
+                                                    <i class="material-icons">delete_forever</i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="table-img center">
+                                                <img src="../../assets/images/user/user5.jpg" alt="">
+                                            </td>
+                                            <td class="center">1011</td>
+                                            <td class="center">Jacob Ryan</td>
+                                            <td class="center">Receptionist</td>
+                                            <td class="center">+ 167-894-2378</td>
+                                            <td class="center"><a href="https://www.radixtouch.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8beef3eae6fbe7eecbeee6eae2e7a5e8e4e6">[email&#160;protected]</a></td>
+                                            <td class="center">22,tilak appt. surat</td>
+                                            <td class="center">
+                                                <a href="edit-client.html" class="btn btn-tbl-edit">
+                                                    <i class="material-icons">create</i>
+                                                </a>
+                                                <a href="#" class="btn btn-tbl-delete">
+                                                    <i class="material-icons">delete_forever</i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="table-img center">
+                                                <img src="../../assets/images/user/user4.jpg" alt="">
+                                            </td>
+                                            <td class="center">1012</td>
+                                            <td class="center">Megha Trivedi</td>
+                                            <td class="center">Manager</td>
+                                            <td class="center">+ 167-894-2378</td>
+                                            <td class="center"><a href="https://www.radixtouch.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b2d7cad3dfc2ded7f2d7dfd3dbde9cd1dddf">[email&#160;protected]</a></td>
+                                            <td class="center">22,tilak appt. surat</td>
+                                            <td class="center">
+                                                <a href="edit-client.html" class="btn btn-tbl-edit">
+                                                    <i class="material-icons">create</i>
+                                                </a>
+                                                <a href="#" class="btn btn-tbl-delete">
+                                                    <i class="material-icons">delete_forever</i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="table-img center">
+                                                <img src="../../assets/images/user/user3.jpg" alt="">
+                                            </td>
+                                            <td class="center">1013</td>
+                                            <td class="center">Rajesh</td>
+                                            <td class="center">Director</td>
+                                            <td class="center">+ 167-894-2378</td>
+                                            <td class="center"><a href="https://www.radixtouch.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0a6f726b677a666f4a6f676b636624696567">[email&#160;protected]</a></td>
+                                            <td class="center">22,tilak appt. surat</td>
+                                            <td class="center">
+                                                <a href="edit-client.html" class="btn btn-tbl-edit">
+                                                    <i class="material-icons">create</i>
+                                                </a>
+                                                <a href="#" class="btn btn-tbl-delete">
+                                                    <i class="material-icons">delete_forever</i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="table-img center">
+                                                <img src="../../assets/images/user/user2.jpg" alt="">
+                                            </td>
+                                            <td class="center">1014</td>
+                                            <td class="center">Pooja Patel</td>
+                                            <td class="center">Programmer</td>
+                                            <td class="center">+ 167-894-2378</td>
+                                            <td class="center"><a href="https://www.radixtouch.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="117469707c617d7451747c70787d3f727e7c">[email&#160;protected]</a></td>
+                                            <td class="center">22,tilak appt. surat</td>
+                                            <td class="center">
+                                                <a href="edit-client.html" class="btn btn-tbl-edit">
+                                                    <i class="material-icons">create</i>
+                                                </a>
+                                                <a href="#" class="btn btn-tbl-delete">
+                                                    <i class="material-icons">delete_forever</i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="table-img center">
+                                                <img src="../../assets/images/user/user1.jpg" alt="">
+                                            </td>
+                                            <td class="center">1015</td>
+                                            <td class="center">Sarah Smith</td>
+                                            <td class="center">Manager</td>
+                                            <td class="center">+ 167-894-2378</td>
+                                            <td class="center"><a href="https://www.radixtouch.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6f0a170e021f030a2f0a020e0603410c0002">[email&#160;protected]</a></td>
+                                            <td class="center">22,tilak appt. surat</td>
+                                            <td class="center">
+                                                <a href="edit-client.html" class="btn btn-tbl-edit">
+                                                    <i class="material-icons">create</i>
+                                                </a>
+                                                <a href="#" class="btn btn-tbl-delete">
+                                                    <i class="material-icons">delete_forever</i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th class="center">#</th>
+                                            <th class="center"> Client ID </th>
+                                            <th class="center"> Name </th>
+                                            <th class="center"> Organization </th>
+                                            <th class="center"> Mobile </th>
+                                            <th class="center"> Email </th>
+                                            <th class="center"> Address </th>
+                                            <th class="center"> Action </th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script data-cfasync="false" src="../../../../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../../assets/js/app.min.js"></script>
+    <script src="../../assets/js/table.min.js"></script>
+    <!-- Custom Js -->
+    <script src="../../assets/js/admin.js"></script>
+    <script src="../../assets/js/pages/tables/jquery-datatable.js"></script>
+</body>
+</html>
